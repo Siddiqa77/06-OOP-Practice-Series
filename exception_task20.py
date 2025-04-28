@@ -1,3 +1,8 @@
+# 20. Creating a Custom Exception
+# Assignment:
+# Create a custom exception InvalidAgeError. Write a function check_age(age) that raises this exception if age < 18. Handle it with try...except.
+
+
 # Define a custom exception
 class InvalidAgeError(Exception):
     def __init__(self, message="Age must be at least 18."):

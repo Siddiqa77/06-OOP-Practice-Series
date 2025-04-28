@@ -1,3 +1,10 @@
+# 9. Abstract Classes and Methods
+# Assignment:
+# Use the abc module to create an abstract class Shape with an abstract method area(). Inherit a class Rectangle that implements area().
+
+
+
+
 from abc import ABC, abstractmethod
 
 # Abstract class
@@ -16,5 +23,5 @@ class Rectangle(Shape):
         return self.length * self.width
 
 # Create an instance of Rectangle
-rect = Rectangle(5, 10)
-print("Area of rectangle:", rect.area())
+rect:Rectangle = Rectangle(5, 10)
+print(f"Area of the rectangle: {rect.area()}")

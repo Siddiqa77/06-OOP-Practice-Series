@@ -1,3 +1,19 @@
+# 7. Access Modifiers: Public, Private, and Protected
+# Assignment:
+# Create a class Employee with:
+
+# a public variable name,
+
+# a protected variable _salary, and
+
+# a private variable __ssn.
+
+# Try accessing all three variables from an object of the class and document what happens.
+
+
+
+
+
 class Employee:
     def __init__(self, name, salary, ssn):
         self.name = name           # Public
@@ -5,7 +21,7 @@ class Employee:
         self.__ssn = ssn           # Private
 
 # Create an object
-emp = Employee("Siddiqa", 50000, "123-45-6789")
+emp: Employee = Employee("Siddiqa", 50000, "123-45-6789")
 
 # Accessing public variable
 print("Name (Public):", emp.name)
@@ -20,4 +36,4 @@ except AttributeError as e:
     print("Error accessing private variable:", e)
 
 # Accessing private variable using name mangling
-print("SSN (Accessed via name mangling):", emp._Employee__ssn)
+print("SSN (Accessed via name mangling):", emp._Employee__ssn) 

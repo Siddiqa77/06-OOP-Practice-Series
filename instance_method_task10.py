@@ -1,3 +1,8 @@
+# 10. Instance Methods
+# Assignment:
+# Create a class Dog with instance variables name and breed. Add an instance method bark() that prints a message including the dog's name.
+
+
 class Dog:
     def __init__(self, name, breed):
         # Instance variables
@@ -9,7 +14,7 @@ class Dog:
         print(f"{self.name} the {self.breed} says: Woof!")
 
 # Create a Dog object
-dog1 = Dog("Buddy", "Golden Retriever")
+dog:Dog = Dog("Buddy", "Golden Retriever")
 
 # Calling the instance method
-dog1.bark()
+dog.bark()
